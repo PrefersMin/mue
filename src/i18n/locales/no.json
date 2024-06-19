@@ -424,8 +424,7 @@
             "focus": "Focus on tab open",
             "search_engine": "Søkemotor",
             "search_engine_subtitle": "Choose search engine to use in the search bar",
-            "title": "Søkebar",
-            "voice_search": "Voice search"
+            "title": "Søkebar"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

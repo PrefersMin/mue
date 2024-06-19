@@ -424,8 +424,7 @@
             "focus": "Fokus auf geöffneten Tab",
             "search_engine": "Suchmaschine",
             "search_engine_subtitle": "Wählen Sie die zu verwendende Suchmaschine in der Suchleiste",
-            "title": "Suche",
-            "voice_search": "Sprachsuche"
+            "title": "Suche"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

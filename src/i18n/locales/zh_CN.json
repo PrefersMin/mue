@@ -424,8 +424,7 @@
             "focus": "Focus on tab open",
             "search_engine": "搜索引擎",
             "search_engine_subtitle": "Choose search engine to use in the search bar",
-            "title": "搜索栏",
-            "voice_search": "语音搜索"
+            "title": "搜索栏"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

@@ -73,13 +73,6 @@ class SearchOptions extends PureComponent {
           />
           <Action>
             {/* not supported on firefox */}
-            {navigator.userAgent.includes('Chrome') && typeof InstallTrigger === 'undefined' ? (
-              <Checkbox
-                name="voiceSearch"
-                text={variables.getMessage(`${SEARCH_SECTION}.voice_search`)}
-                category="search"
-              />
-            ) : null}
             <Checkbox
               name="searchDropdown"
               text={variables.getMessage(`${SEARCH_SECTION}.dropdown`)}

@@ -1,10 +1,10 @@
 import variables from 'config/variables';
-import { memo, createRef, useEffect, useState } from 'react';
+import { createRef, memo, useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
-import { MdSearch, MdMic, MdScreenSearchDesktop } from 'react-icons/md';
+import { MdScreenSearchDesktop, MdSearch } from 'react-icons/md';
 import { BsGoogle } from 'react-icons/bs';
-import { SiDuckduckgo, SiMicrosoftbing, SiBaidu, SiNaver } from 'react-icons/si';
-import { FaYandex, FaYahoo } from 'react-icons/fa';
+import { SiBaidu, SiDuckduckgo, SiMicrosoftbing, SiNaver } from 'react-icons/si';
+import { FaYahoo, FaYandex } from 'react-icons/fa';
 import { Tooltip } from 'components/Elements';
 import { Autocomplete as AutocompleteInput } from './components/autocomplete';
 
@@ -17,7 +17,6 @@ import searchEngines from './search_engines.json';
 function Search() {
   const [url, setURL] = useState('');
   const [query, setQuery] = useState('');
-  const [microphone, setMicrophone] = useState(null);
   const [suggestions, setSuggestions] = useState([]);
   const [searchDropdown, setSearchDropdown] = useState(false);
   const [classList] = useState(
@@ -71,46 +70,11 @@ function Search() {
     }
 
     if (localStorage.getItem('voiceSearch') === 'true') {
-      setMicrophone(
-        <button
-          className="navbarButton"
-          onClick={startSpeechRecognition}
-          ref={micIcon}
-          aria-label="Microphone Search"
-        >
-          <MdMic className="micIcon" />
-        </button>,
-      );
     }
 
     setURL(_url);
     setQuery(_query);
     setCurrentSearch(info ? info.name : 'Custom');
-  }
-
-  function startSpeechRecognition() {
-    const voiceSearch = new window.webkitSpeechRecognition();
-    voiceSearch.start();
-
-    micIcon.current.classList.add('micActive');
-
-    const searchText = document.getElementById('searchtext');
-
-    voiceSearch.onresult = (event) => {
-      searchText.value = event.results[0][0].transcript;
-    };
-
-    voiceSearch.onend = () => {
-      micIcon.current.classList.remove('micActive');
-      if (searchText.value === '') {
-        return;
-      }
-
-      setTimeout(() => {
-        variables.stats.postEvent('feature', 'Voice search');
-        window.location.href = url + `?${query}=` + searchText.value;
-      }, 1000);
-    };
   }
 
   function searchButton(e) {
@@ -139,6 +103,7 @@ function Search() {
   }
 
   const getSuggestionsDebounced = useDebouncedCallback(getSuggestions, 100);
+
   // const getSuggestionsDebounced = getSuggestions;
 
   /**
@@ -238,11 +203,6 @@ function Search() {
           ) : (
             ''
           )}
-          <Tooltip
-            title={variables.getMessage('modals.main.settings.sections.search.voice_search')}
-          >
-            {microphone}
-          </Tooltip>
         </div>
       </div>
       <div>

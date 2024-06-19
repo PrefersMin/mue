@@ -424,8 +424,7 @@
             "focus": "Açık Sekmeye Odaklan",
             "search_engine": "Arama Motoru",
             "search_engine_subtitle": "Arama çubuğunda kullanılacak arama motorunu seçin.",
-            "title": "Arama",
-            "voice_search": "Sesli Arama"
+            "title": "Arama"
           },
           "stats": {
             "achievement_unlocked": "Başarım Açıldı: {name}",

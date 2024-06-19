@@ -424,8 +424,7 @@
             "focus": "Фокус на открытой вкладке",
             "search_engine": "Поисковый движок",
             "search_engine_subtitle": "Выберите поисковую систему для использования в строке поиска",
-            "title": "Панель поиска",
-            "voice_search": "Поиск голосом"
+            "title": "Панель поиска"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

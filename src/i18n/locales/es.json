@@ -424,8 +424,7 @@
             "focus": "Centrarse en la pestaña abierta",
             "search_engine": "Motor de búsqueda",
             "search_engine_subtitle": "Elija el motor de búsqueda para usar en la barra de búsqueda",
-            "title": "Búsqueda",
-            "voice_search": "Búsqueda por voz"
+            "title": "Búsqueda"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

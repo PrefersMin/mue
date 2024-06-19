@@ -282,7 +282,6 @@
             "autocomplete": "Autocomplete",
             "autocomplete_provider": "Autocomplete Provider",
             "autocomplete_provider_subtitle": "Search engine to use for autocomplete dropdown results",
-            "voice_search": "Voice search",
             "dropdown": "Search Dropdown",
             "focus": "Focus on tab open"
           },

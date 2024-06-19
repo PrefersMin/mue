@@ -424,8 +424,7 @@
             "focus": "Foco na guia aberta",
             "search_engine": "Motor de busca",
             "search_engine_subtitle": "Escolha o mecanismo de pesquisa para usar na barra de pesquisa",
-            "title": "Pesquisar",
-            "voice_search": "Pesquisa por voz"
+            "title": "Pesquisar"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

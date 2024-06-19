@@ -424,8 +424,7 @@
             "focus": "Focus op tabblad openen",
             "search_engine": "Zoekmachine",
             "search_engine_subtitle": "Kies zoekmachine die gebruikt wordt in de zoekbalk",
-            "title": "Zoekbalk",
-            "voice_search": "Spraakgestuurd zoeken gebruiken"
+            "title": "Zoekbalk"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

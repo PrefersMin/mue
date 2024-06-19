@@ -424,8 +424,7 @@
             "focus": "Focus on tab open",
             "search_engine": "Moteur de recherche",
             "search_engine_subtitle": "Choose search engine to use in the search bar",
-            "title": "Barre de Recherche",
-            "voice_search": "Recherche vocale"
+            "title": "Barre de Recherche"
           },
           "stats": {
             "achievement_unlocked": "Achievement Unlocked: {name}",

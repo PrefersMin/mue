@@ -1,5 +1,5 @@
 import variables from 'config/variables';
-import { createRef, memo, useEffect, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 import { MdScreenSearchDesktop, MdSearch } from 'react-icons/md';
 import { BsGoogle } from 'react-icons/bs';
@@ -41,8 +41,6 @@ function Search() {
       EventBus.off('refresh');
     };
   }, []);
-
-  let micIcon = createRef();
 
   const customText = variables
     .getMessage('modals.main.settings.sections.search.custom')

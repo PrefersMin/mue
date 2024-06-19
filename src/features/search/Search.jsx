@@ -206,6 +206,22 @@ function Search() {
   return (
     <div className="searchComponents">
       <div className="searchMain">
+        <form onSubmit={searchButton} className="searchBar">
+          <AutocompleteInput
+            placeholder={variables.getMessage('widgets.search')}
+            id="searchtext"
+            suggestions={suggestions}
+            onChange={(e) => getSuggestionsDebounced(e)}
+            onClick={searchButton}
+          />
+          <div className={classList}>
+            <Tooltip title={variables.getMessage('widgets.search')}>
+              <button className="navbarButton" onClick={searchButton} aria-label="Search">
+                <MdSearch />
+              </button>
+            </Tooltip>
+          </div>
+        </form>
         <div className={classList}>
           {localStorage.getItem('searchDropdown') === 'true' ? (
             <Tooltip
@@ -228,22 +244,6 @@ function Search() {
             {microphone}
           </Tooltip>
         </div>
-        <form onSubmit={searchButton} className="searchBar">
-          <div className={classList}>
-            <Tooltip title={variables.getMessage('widgets.search')}>
-              <button className="navbarButton" onClick={searchButton} aria-label="Search">
-                <MdSearch />
-              </button>
-            </Tooltip>
-          </div>
-          <AutocompleteInput
-            placeholder={variables.getMessage('widgets.search')}
-            id="searchtext"
-            suggestions={suggestions}
-            onChange={(e) => getSuggestionsDebounced(e)}
-            onClick={searchButton}
-          />
-        </form>
       </div>
       <div>
         {localStorage.getItem('searchDropdown') === 'true' && searchDropdown === true && (

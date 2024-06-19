@@ -34,11 +34,11 @@
 }
 
 .searchComponents {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  display: flex;
-  flex-flow: column;
+  //position: absolute;
+  //top: 1rem;
+  //left: 1rem;
+  //display: flex;
+  //flex-flow: column;
 
   button {
     @include basicIconButton(12px, 1.2rem, ui);

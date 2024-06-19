@@ -24,6 +24,9 @@
 }
 
 .searchBar {
+  input {
+    width: 800px;
+  }
   input[type='text']:focus + .suggestions {
     opacity: 1;
   }

@@ -16,7 +16,6 @@ class About extends PureComponent {
       sponsors: [],
       other_contributors: [],
       photographers: [],
-      curators: [],
       update: variables.getMessage('modals.main.settings.sections.about.version.checking_update'),
       loading: variables.getMessage('modals.main.loading'),
     };
@@ -24,7 +23,7 @@ class About extends PureComponent {
   }
 
   async getGitHubData() {
-    let contributors, sponsors, photographers, curators, versionData;
+    let contributors, sponsors, photographers, versionData;
 
     try {
       versionData = await (
@@ -61,13 +60,6 @@ class About extends PureComponent {
           signal: this.controller.signal,
         })
       ).json();
-      curators = (
-        await (
-          await fetch(variables.constants.API_URL + '/marketplace/curators', {
-            signal: this.controller.signal,
-          })
-        ).json()
-      ).data;
     } catch (e) {
       if (this.controller.signal.aborted === true) {
         return;
@@ -108,7 +100,6 @@ class About extends PureComponent {
       update,
       other_contributors,
       photographers,
-      curators,
       loading: null,
     });
   }
@@ -138,11 +129,11 @@ class About extends PureComponent {
             <img
               draggable={false}
               className="aboutLogo"
-              src={'src/assets/icons/mue_about.png'}
+              src={'src/assets/icons/logo.svg'}
               alt="Logo"
             />
             <div className="aboutText">
-              <span className="title">Mue, by Kaiso</span>
+              <span className="title">PrefersMin Tab</span>
               <span className="subtitle">
                 {variables.getMessage('modals.main.settings.sections.about.version.title')}{' '}
                 {variables.constants.VERSION}
@@ -358,27 +349,6 @@ class About extends PureComponent {
               <li key={name} className="subtitle-photographers">
                 {name}
                 <span> ({count} images)</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div
-          className="settingsRow"
-          style={{
-            flexFlow: 'column',
-            alignItems: 'flex-start',
-            minHeight: '10px',
-            borderBottom: '0',
-          }}
-        >
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.curators')}
-          </span>
-          {!!this.state.loading ? <p>{this.state.loading}</p> : <></>}
-          <ul>
-            {this.state.curators.map((name) => (
-              <li key={name} className="subtitle-photographers">
-                {name}
               </li>
             ))}
           </ul>

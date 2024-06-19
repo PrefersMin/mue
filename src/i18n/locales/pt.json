@@ -120,12 +120,7 @@
         "sections": {
           "about": {
             "contact_us": "Contate-nos",
-            "contributors": "Contribuintes",
             "form_button": "Formulário",
-            "resources_used": {
-              "bg_images": "Imagens de plano de fundo offline",
-              "title": "Recursos usados"
-            },
             "support_donate": "Doar",
             "support_mue": "Apoie Mue",
             "support_subtitle": "Como o Mue é totalmente gratuito, contamos com doações para cobrir as contas do servidor e financiar o desenvolvimento",

@@ -21,21 +21,6 @@
   }
 }
 
-.contributorImages {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-
-  img {
-    width: 75px;
-    height: auto;
-
-    @include themed {
-      border-radius: t($borderRadius);
-    }
-  }
-}
-
 .aboutText {
   text-align: center;
   display: flex;

@@ -120,12 +120,7 @@
         "sections": {
           "about": {
             "contact_us": "Contact Us",
-            "contributors": "Contributors",
             "form_button": "Forum",
-            "resources_used": {
-              "bg_images": "Offline background images",
-              "title": "Resources used"
-            },
             "support_donate": "Doneer",
             "support_mue": "Support Mue",
             "support_subtitle": "Omdat Mue volledig gratis is, zijn we afhankelijk van donaties om de serverrekeningen te dekken en de ontwikkeling te financieren",

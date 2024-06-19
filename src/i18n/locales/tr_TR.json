@@ -120,12 +120,7 @@
         "sections": {
           "about": {
             "contact_us": "Bize Ulaşın",
-            "contributors": "Katkıda Bulunanlar",
             "form_button": "Form",
-            "resources_used": {
-              "bg_images": "Çevrimdışı Arka Plan Resim İçerikleri",
-              "title": "Kullanılan Kaynaklar"
-            },
             "support_donate": "Bağış Yap",
             "support_mue": "Mue Destek",
             "support_subtitle": "Mue tamamen ücretsiz olduğu için, sunucu faturalarını karşılamak ve geliştirme masraflarını finanse etmek için bağışları kullanıyoruz.",

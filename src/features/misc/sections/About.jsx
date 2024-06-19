@@ -1,19 +1,16 @@
 import variables from 'config/variables';
 import { PureComponent } from 'react';
-import { MdEmail, MdContactPage } from 'react-icons/md';
+import { MdContactPage, MdEmail } from 'react-icons/md';
 import { FaDiscord } from 'react-icons/fa';
 import { SiGithubsponsors, SiOpencollective, SiX } from 'react-icons/si';
 import { BiDonateHeart } from 'react-icons/bi';
 
-import { Tooltip, Button } from 'components/Elements';
-import other_contributors from 'utils/data/other_contributors.json';
+import { Button } from 'components/Elements';
 
 class About extends PureComponent {
   constructor() {
     super();
     this.state = {
-      contributors: [],
-      other_contributors: [],
       update: variables.getMessage('modals.main.settings.sections.about.version.checking_update'),
       loading: variables.getMessage('modals.main.loading'),
     };
@@ -21,28 +18,17 @@ class About extends PureComponent {
   }
 
   async getGitHubData() {
-    let contributors, versionData;
+    let versionData;
 
     try {
       versionData = await (
         await fetch(
           variables.constants.GITHUB_URL +
-            '/repos/' +
-            variables.constants.ORG_NAME +
-            '/' +
-            variables.constants.REPO_NAME +
-            '/releases',
-          { signal: this.controller.signal },
-        )
-      ).json();
-      contributors = await (
-        await fetch(
-          variables.constants.GITHUB_URL +
-            '/repos/' +
-            variables.constants.ORG_NAME +
-            '/' +
-            variables.constants.REPO_NAME +
-            '/contributors',
+          '/repos/' +
+          variables.constants.ORG_NAME +
+          '/' +
+          variables.constants.REPO_NAME +
+          '/releases',
           { signal: this.controller.signal },
         )
       ).json();
@@ -77,9 +63,7 @@ class About extends PureComponent {
 
     this.setState({
       // exclude bots
-      contributors: contributors.filter((contributor) => !contributor.login.includes('bot')),
       update,
-      other_contributors,
       loading: null,
     });
   }
@@ -223,65 +207,6 @@ class About extends PureComponent {
               icon={<SiOpencollective />}
               tooltipTitle="Open Collective"
             />
-          </div>
-        </div>
-
-        <div
-          className="settingsRow"
-          style={{ flexFlow: 'column', alignItems: 'flex-start', minHeight: '70px' }}
-        >
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.resources_used.title')}
-          </span>
-          <span className="subtitle">
-            <a
-              href="https://www.pexels.com"
-              className="link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Pexels
-            </a>
-            ,{' '}
-            <a
-              href="https://unsplash.com"
-              className="link"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Unsplash
-            </a>{' '}
-            ({variables.getMessage('modals.main.settings.sections.about.resources_used.bg_images')})
-          </span>
-        </div>
-
-        <div className="settingsRow" style={{ flexFlow: 'column', alignItems: 'flex-start' }}>
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.contributors')}
-          </span>
-          <p>{this.state.loading}</p>
-          <div className="contributorImages">
-            {this.state.contributors.map(({ login, id }) => (
-              <Tooltip title={login} key={login}>
-                <a href={'https://github.com/' + login} target="_blank" rel="noopener noreferrer">
-                  <img
-                    draggable={false}
-                    src={'https://avatars.githubusercontent.com/u/' + id + '?s=128'}
-                    alt={login}
-                  ></img>
-                </a>
-              </Tooltip>
-            ))}
-            {
-              // for those who contributed without opening a pull request
-              this.state.other_contributors.map(({ login, avatar_url }) => (
-                <Tooltip title={login} key={login}>
-                  <a href={'https://github.com/' + login} target="_blank" rel="noopener noreferrer">
-                    <img draggable={false} src={avatar_url + '&s=128'} alt={login}></img>
-                  </a>
-                </Tooltip>
-              ))
-            }
           </div>
         </div>
       </div>

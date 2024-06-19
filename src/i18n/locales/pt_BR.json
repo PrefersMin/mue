@@ -302,10 +302,6 @@
               "title": "Unsplash Collection(s)"
             }
           },
-          "changelog": {
-            "by": "Por {author}",
-            "title": "Registo de alterações"
-          },
           "date": {
             "datenth": "Data nth",
             "day_of_week": "Dia da semana",

@@ -302,10 +302,6 @@
               "title": "Unsplash Koleksiyonu"
             }
           },
-          "changelog": {
-            "by": "{author}",
-            "title": "Değişiklik Günlüğü"
-          },
           "date": {
             "datenth": "Gün Vurgusu",
             "day_of_week": "Haftanın Günü",

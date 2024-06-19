@@ -302,10 +302,6 @@
               "title": "Unsplash Collection(s)"
             }
           },
-          "changelog": {
-            "by": "By {author}",
-            "title": "更新日志"
-          },
           "date": {
             "datenth": "添加th后缀",
             "day_of_week": "星期n",

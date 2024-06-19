@@ -302,10 +302,6 @@
               "title": "Unsplash Collection(s)"
             }
           },
-          "changelog": {
-            "by": "Oleh {author}",
-            "title": "Changelog"
-          },
           "date": {
             "datenth": "Imbuhan nth",
             "day_of_week": "Hari",

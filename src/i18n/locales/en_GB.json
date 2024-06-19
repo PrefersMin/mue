@@ -475,10 +475,6 @@
             "title": "Language",
             "quote": "Quote language"
           },
-          "changelog": {
-            "title": "Change Log",
-            "by": "By {author}"
-          },
           "about": {
             "title": "About",
             "version": {

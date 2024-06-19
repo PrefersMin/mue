@@ -302,10 +302,6 @@
               "title": "Unsplash Collection(s)"
             }
           },
-          "changelog": {
-            "by": "By {author}",
-            "title": "Change Log"
-          },
           "date": {
             "datenth": "Date nth",
             "day_of_week": "Day of week",

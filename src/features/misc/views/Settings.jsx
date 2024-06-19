@@ -17,7 +17,6 @@ import {
   About,
   AdvancedOptions,
   AppearanceOptions,
-  Changelog,
   ExperimentalOptions,
   LanguageOptions,
   Overview,
@@ -79,11 +78,6 @@ const sections = [
     label: 'modals.main.settings.sections.experimental.title',
     name: 'experimental',
     component: ExperimentalOptions,
-  },
-  {
-    label: 'modals.main.settings.sections.changelog.title',
-    name: 'changelog',
-    component: Changelog,
   },
   { label: 'modals.main.settings.sections.about.title', name: 'about', component: About },
 ];

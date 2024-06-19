@@ -570,7 +570,6 @@
         "privacy": {
           "description": "Activa estos ajustes para proteger aún más tu privacidad con Mue.",
           "links": {
-            "privacy_policy": "Política de privacidad",
             "source_code": "Código fuente",
             "title": "Enlaces"
           },

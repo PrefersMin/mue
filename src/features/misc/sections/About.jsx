@@ -1,11 +1,5 @@
 import variables from 'config/variables';
 import { PureComponent } from 'react';
-import { MdContactPage, MdEmail } from 'react-icons/md';
-import { FaDiscord } from 'react-icons/fa';
-import { SiGithubsponsors, SiOpencollective, SiX } from 'react-icons/si';
-import { BiDonateHeart } from 'react-icons/bi';
-
-import { Button } from 'components/Elements';
 
 class About extends PureComponent {
   constructor() {
@@ -123,31 +117,7 @@ class About extends PureComponent {
                   The Mue Authors
                 </a>
               </span>
-              <br></br>
-              <span className="subtitle">
-                Copyright 2023-2024{' '}
-                <a
-                  className="link"
-                  href="https://kaiso.one"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {' '}
-                  Kaiso One Ltd
-                </a>
-              </span>
             </div>
-            <span className="subtitle">Licensed under the BSD-3-Clause License</span>
-            <span className="subtitle">
-              <a
-                href={variables.constants.PRIVACY_URL}
-                className="link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {variables.getMessage('modals.welcome.sections.privacy.links.privacy_policy')}
-              </a>
-            </span>
           </div>
         </div>
       </div>
@@ -155,4 +125,4 @@ class About extends PureComponent {
   }
 }
 
-export { About as default, About };
+export { About };

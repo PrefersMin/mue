@@ -643,7 +643,6 @@
           "offline_mode_description": "Enabling offline mode will disable all requests to any service. This will result in online backgrounds, online quotes, marketplace, weather, quick links, change log and some about tab information to be disabled.",
           "links": {
             "title": "Links",
-            "privacy_policy": "Privacy Policy",
             "source_code": "Source Code"
           }
         },

@@ -570,7 +570,6 @@
         "privacy": {
           "description": "Aktifkan pegaturan sehingga Mue dapat melindungi privasi Anda.",
           "links": {
-            "privacy_policy": "Kebijakan Privasi",
             "source_code": "Source Code",
             "title": "Pranala"
           },

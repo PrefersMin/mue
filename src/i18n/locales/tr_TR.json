@@ -570,7 +570,6 @@
         "privacy": {
           "description": "Mue ile gizliliğinizi daha da korumak için ayarları etkinleştirin.",
           "links": {
-            "privacy_policy": "Gizlilik Politikası",
             "source_code": "Kaynak Kodu",
             "title": "Bağlantılar"
           },

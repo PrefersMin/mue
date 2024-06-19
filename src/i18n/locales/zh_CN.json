@@ -570,7 +570,6 @@
         "privacy": {
           "description": "进行一些设置来和 Mue 更好的保护您的隐私",
           "links": {
-            "privacy_policy": "隐私政策",
             "source_code": "源代码",
             "title": "链接"
           },

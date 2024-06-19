@@ -570,7 +570,6 @@
         "privacy": {
           "description": "Aktivieren Sie die Einstellungen, um Ihre Privatsphäre mit Mue weiter zu schützen.",
           "links": {
-            "privacy_policy": "Datenschutzerklärung",
             "source_code": "Quellcode",
             "title": "Links"
           },

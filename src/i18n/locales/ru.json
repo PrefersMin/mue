@@ -122,7 +122,6 @@
             "contact_us": "Contact Us",
             "contributors": "Участники",
             "form_button": "Форма",
-            "no_supporters": "В настоящее время нет поддержки Mue",
             "resources_used": {
               "bg_images": "Фоновые изображения в оффлайне",
               "title": "Используемые ресурсы"
@@ -130,7 +129,6 @@
             "support_donate": "Пожертвовать",
             "support_mue": "Support Mue",
             "support_subtitle": "Поскольку Mue полностью бесплатен, мы полагаемся на пожертвования для покрытия счетов за сервер и финансирования развития",
-            "supporters": "Поддержка",
             "title": "О программе",
             "version": {
               "checking_update": "Проверяю обновления",

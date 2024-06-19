@@ -13,7 +13,6 @@ class About extends PureComponent {
     super();
     this.state = {
       contributors: [],
-      sponsors: [],
       other_contributors: [],
       update: variables.getMessage('modals.main.settings.sections.about.version.checking_update'),
       loading: variables.getMessage('modals.main.loading'),
@@ -22,7 +21,7 @@ class About extends PureComponent {
   }
 
   async getGitHubData() {
-    let contributors, sponsors, versionData;
+    let contributors, versionData;
 
     try {
       versionData = await (
@@ -47,13 +46,6 @@ class About extends PureComponent {
           { signal: this.controller.signal },
         )
       ).json();
-      sponsors = (
-        await (
-          await fetch(variables.constants.SPONSORS_URL + '/list', {
-            signal: this.controller.signal,
-          })
-        ).json()
-      ).sponsors;
     } catch (e) {
       if (this.controller.signal.aborted === true) {
         return;
@@ -65,10 +57,6 @@ class About extends PureComponent {
           'modals.main.settings.sections.about.version.error.description',
         ),
       });
-    }
-
-    if (sponsors.length === 0) {
-      sponsors = [{ handle: 'empty' }];
     }
 
     if (this.controller.signal.aborted === true) {
@@ -90,7 +78,6 @@ class About extends PureComponent {
     this.setState({
       // exclude bots
       contributors: contributors.filter((contributor) => !contributor.login.includes('bot')),
-      sponsors,
       update,
       other_contributors,
       loading: null,
@@ -295,34 +282,6 @@ class About extends PureComponent {
                 </Tooltip>
               ))
             }
-          </div>
-        </div>
-
-        <div className="settingsRow" style={{ flexFlow: 'column', alignItems: 'flex-start' }}>
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.supporters')}
-          </span>
-          <p>{this.state.loading}</p>
-          <div className="contributorImages">
-            {this.state.sponsors.map(({ handle, avatar }) => {
-              if (handle === 'empty') {
-                return (
-                  <p>{variables.getMessage('modals.main.settings.sections.about.no_supporters')}</p>
-                );
-              }
-
-              return (
-                <Tooltip title={handle} key={handle}>
-                  <a
-                    href={'https://github.com/' + handle}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <img draggable={false} src={avatar.split('?')[0] + '?s=128'} alt={handle}></img>
-                  </a>
-                </Tooltip>
-              );
-            })}
           </div>
         </div>
       </div>

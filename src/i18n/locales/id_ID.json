@@ -122,7 +122,6 @@
             "contact_us": "Hubungi Kami",
             "contributors": "Kontributor",
             "form_button": "Form",
-            "no_supporters": "Mue belum punya suporter saat ini.",
             "resources_used": {
               "bg_images": "Offline background images",
               "title": "Resources yang kami gunakan"
@@ -130,7 +129,6 @@
             "support_donate": "Donate",
             "support_mue": "Dukung Mue",
             "support_subtitle": "As Mue is entirely free, we rely on donations to cover the server bills and fund development",
-            "supporters": "Suporter",
             "title": "Tentang Mue",
             "version": {
               "checking_update": "Periksa pembaruan",

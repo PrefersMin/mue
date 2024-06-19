@@ -122,7 +122,6 @@
             "contact_us": "Nous contacter",
             "contributors": "Collaborateurs",
             "form_button": "Form",
-            "no_supporters": "There are currently no Mue supporters",
             "resources_used": {
               "bg_images": "Images d'arrière-plan hors ligne",
               "title": "Ressources utilisées"
@@ -130,7 +129,6 @@
             "support_donate": "Donate",
             "support_mue": "Soutenir Mue",
             "support_subtitle": "As Mue is entirely free, we rely on donations to cover the server bills and fund development",
-            "supporters": "Partisans",
             "title": "à propos de",
             "version": {
               "checking_update": "Vérification de la mise à jour",

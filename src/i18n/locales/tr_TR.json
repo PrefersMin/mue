@@ -122,7 +122,6 @@
             "contact_us": "Bize Ulaşın",
             "contributors": "Katkıda Bulunanlar",
             "form_button": "Form",
-            "no_supporters": "Şu anda Mue destekçisi yok",
             "resources_used": {
               "bg_images": "Çevrimdışı Arka Plan Resim İçerikleri",
               "title": "Kullanılan Kaynaklar"
@@ -130,7 +129,6 @@
             "support_donate": "Bağış Yap",
             "support_mue": "Mue Destek",
             "support_subtitle": "Mue tamamen ücretsiz olduğu için, sunucu faturalarını karşılamak ve geliştirme masraflarını finanse etmek için bağışları kullanıyoruz.",
-            "supporters": "Destekleyenler",
             "title": "Hakkında",
             "version": {
               "checking_update": "Güncellemeleri Kontrol Et",

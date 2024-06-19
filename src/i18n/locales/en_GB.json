@@ -502,9 +502,7 @@
               "title": "Resources used",
               "bg_images": "Offline background images"
             },
-            "contributors": "Contributors",
-            "supporters": "Supporters",
-            "no_supporters": "There are currently no Mue supporters"
+            "contributors": "Contributors"
           }
         },
         "buttons": {

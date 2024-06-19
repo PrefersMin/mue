@@ -122,7 +122,6 @@
             "contact_us": "Contacto",
             "contributors": "Contribuyentes",
             "form_button": "Formulario",
-            "no_supporters": "Actualmente no hay partidarios de Mue",
             "resources_used": {
               "bg_images": "Imágenes de fondo sin conexión",
               "title": "Recursos usados"
@@ -130,7 +129,6 @@
             "support_donate": "Donar",
             "support_mue": "Apoya Mue",
             "support_subtitle": "Como Mue es totalmente gratuito, dependemos de las donaciones para cubrir las facturas del servidor y financiar el desarrollo",
-            "supporters": "Partidarios",
             "title": "Acerca de",
             "version": {
               "checking_update": "Comprobando actualizaciones",

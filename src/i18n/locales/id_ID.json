@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Hubungi Kami",
-            "form_button": "Form",
-            "support_donate": "Donate",
-            "support_mue": "Dukung Mue",
-            "support_subtitle": "As Mue is entirely free, we rely on donations to cover the server bills and fund development",
             "title": "Tentang Mue",
             "version": {
               "checking_update": "Periksa pembaruan",

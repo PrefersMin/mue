@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Kontaktieren Sie uns",
-            "form_button": "Formular",
-            "support_donate": "Spenden",
-            "support_mue": "Mue unterstützen",
-            "support_subtitle": "Da Mue völlig kostenlos ist, sind wir auf Spenden angewiesen, um die Serverkosten zu decken und die Entwicklung zu finanzieren.",
             "title": "Über",
             "version": {
               "checking_update": "Auf Update prüfen",

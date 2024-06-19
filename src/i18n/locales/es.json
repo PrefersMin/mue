@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Contacto",
-            "form_button": "Formulario",
-            "support_donate": "Donar",
-            "support_mue": "Apoya Mue",
-            "support_subtitle": "Como Mue es totalmente gratuito, dependemos de las donaciones para cubrir las facturas del servidor y financiar el desarrollo",
             "title": "Acerca de",
             "version": {
               "checking_update": "Comprobando actualizaciones",

@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Contáctanos",
-            "form_button": "Form",
-            "support_donate": "Donate",
-            "support_mue": "Apoya Mue",
-            "support_subtitle": "As Mue is entirely free, we rely on donations to cover the server bills and fund development",
             "title": "Acerca de",
             "version": {
               "checking_update": "Comprobando actualizaciones",

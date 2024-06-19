@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Contact Us",
-            "form_button": "Форма",
-            "support_donate": "Пожертвовать",
-            "support_mue": "Support Mue",
-            "support_subtitle": "Поскольку Mue полностью бесплатен, мы полагаемся на пожертвования для покрытия счетов за сервер и финансирования развития",
             "title": "О программе",
             "version": {
               "checking_update": "Проверяю обновления",

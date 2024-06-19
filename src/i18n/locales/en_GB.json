@@ -492,12 +492,7 @@
                 "title": "Failed to get update information",
                 "description": "An error occured"
               }
-            },
-            "contact_us": "Contact Us",
-            "support_mue": "Support Mue",
-            "support_subtitle": "As Mue is entirely free, we rely on donations to cover the server bills and fund development",
-            "support_donate": "Donate",
-            "form_button": "Form"
+            }
           }
         },
         "buttons": {

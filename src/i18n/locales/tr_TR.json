@@ -119,11 +119,6 @@
         },
         "sections": {
           "about": {
-            "contact_us": "Bize Ulaşın",
-            "form_button": "Form",
-            "support_donate": "Bağış Yap",
-            "support_mue": "Mue Destek",
-            "support_subtitle": "Mue tamamen ücretsiz olduğu için, sunucu faturalarını karşılamak ve geliştirme masraflarını finanse etmek için bağışları kullanıyoruz.",
             "title": "Hakkında",
             "version": {
               "checking_update": "Güncellemeleri Kontrol Et",

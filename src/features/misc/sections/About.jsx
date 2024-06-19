@@ -150,65 +150,6 @@ class About extends PureComponent {
             </span>
           </div>
         </div>
-
-        <div className="settingsRow" style={{ flexFlow: 'column', alignItems: 'flex-start' }}>
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.contact_us')}
-          </span>
-          <div className="aboutContact">
-            <Button
-              type="linkButton"
-              href="https://muetab.com/contact"
-              icon={<MdContactPage />}
-              label={variables.getMessage('modals.main.settings.sections.about.form_button')}
-            />
-            <Button
-              type="linkIconButton"
-              href={'mailto:' + variables.constants.EMAIL}
-              icon={<MdEmail />}
-              tooltipTitle="Email"
-            />
-            <Button
-              type="linkIconButton"
-              href={'https://x.com/' + variables.constants.TWITTER_HANDLE}
-              icon={<SiX />}
-              tooltipTitle="X (Twitter)"
-            />
-            <Button
-              type="linkIconButton"
-              href={'https://discord.gg/' + variables.constants.DISCORD_SERVER}
-              icon={<FaDiscord />}
-              tooltipTitle="Discord"
-            />
-          </div>
-        </div>
-
-        <div className="settingsRow" style={{ flexFlow: 'column', alignItems: 'flex-start' }}>
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.support_mue')}
-          </span>
-          <p>{variables.getMessage('modals.main.settings.sections.about.support_subtitle')}</p>
-          <div className="aboutContact">
-            <Button
-              type="linkButton"
-              href={'https://opencollective.com/' + variables.constants.OPENCOLLECTIVE_USERNAME}
-              icon={<BiDonateHeart />}
-              label={variables.getMessage('modals.main.settings.sections.about.support_donate')}
-            />
-            <Button
-              type="linkIconButton"
-              href={'https://github.com/sponsors/' + variables.constants.ORG_NAME}
-              icon={<SiGithubsponsors />}
-              tooltipTitle="Github Sponsors"
-            />
-            <Button
-              type="linkIconButton"
-              href={'https://opencollective.com/' + variables.constants.OPENCOLLECTIVE_USERNAME}
-              icon={<SiOpencollective />}
-              tooltipTitle="Open Collective"
-            />
-          </div>
-        </div>
       </div>
     );
   }

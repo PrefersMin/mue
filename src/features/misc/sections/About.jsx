@@ -15,7 +15,6 @@ class About extends PureComponent {
       contributors: [],
       sponsors: [],
       other_contributors: [],
-      photographers: [],
       update: variables.getMessage('modals.main.settings.sections.about.version.checking_update'),
       loading: variables.getMessage('modals.main.loading'),
     };
@@ -23,7 +22,7 @@ class About extends PureComponent {
   }
 
   async getGitHubData() {
-    let contributors, sponsors, photographers, versionData;
+    let contributors, sponsors, versionData;
 
     try {
       versionData = await (
@@ -55,11 +54,6 @@ class About extends PureComponent {
           })
         ).json()
       ).sponsors;
-      photographers = await (
-        await fetch(variables.constants.API_URL + '/images/photographers', {
-          signal: this.controller.signal,
-        })
-      ).json();
     } catch (e) {
       if (this.controller.signal.aborted === true) {
         return;
@@ -99,7 +93,6 @@ class About extends PureComponent {
       sponsors,
       update,
       other_contributors,
-      photographers,
       loading: null,
     });
   }
@@ -331,27 +324,6 @@ class About extends PureComponent {
               );
             })}
           </div>
-        </div>
-        <div
-          className="settingsRow"
-          style={{
-            flexFlow: 'column',
-            alignItems: 'flex-start',
-            minHeight: '10px',
-          }}
-        >
-          <span className="title">
-            {variables.getMessage('modals.main.settings.sections.about.photographers')}
-          </span>
-          {!!this.state.loading ? <p>{this.state.loading}</p> : <></>}
-          <ul>
-            {this.state.photographers.map(({ name, count }) => (
-              <li key={name} className="subtitle-photographers">
-                {name}
-                <span> ({count} images)</span>
-              </li>
-            ))}
-          </ul>
         </div>
       </div>
     );

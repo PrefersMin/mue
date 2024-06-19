@@ -36,18 +36,6 @@
   }
 }
 
-.subtitle-photographers {
-  font-size: 16px;
-
-  @include themed {
-    color: t($color);
-
-    span {
-      color: t($subColor);
-    }
-  }
-}
-
 .aboutText {
   text-align: center;
   display: flex;

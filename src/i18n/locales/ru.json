@@ -140,7 +140,7 @@
             "data": "Data",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "Выберите, следует ли экспортировать настройки Mue на компьютер, импортировать существующий файл настроек или сбросить настройки до значений по умолчанию",
-            "experimental_warning": "Обратите внимание, что команда Mue не может оказать поддержку, если у вас включен экспериментальный режим. Пожалуйста, сначала отключите его и посмотрите, сохранится ли проблема, прежде чем обращаться в службу поддержки.",
+
             "offline_mode": "Офлайн режим",
             "offline_subtitle": "При включении все запросы к онлайн-сервисам будут отключены.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Настройки отображения и формат для выбранного типа даты",
             "week_number": "Число недели"
-          },
-          "experimental": {
-            "developer": "Developer",
-            "title": "Экспериментальные настройки",
-            "warning": "Данные настройки не были полностью протестированы/реализованы и могут работать некорректно!"
           },
           "greeting": {
             "add_event": "Add Event",

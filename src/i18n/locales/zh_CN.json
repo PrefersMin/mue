@@ -140,7 +140,7 @@
             "data": "数据和设置",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
-            "experimental_warning": "请注意 Mue 团队无法提供实验性功能的支持。若您遇到问题，请先关闭实验性功能，再寻求帮助。",
+
             "offline_mode": "启用离线模式",
             "offline_subtitle": "When enabled, all requests to online services will be disabled.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Display settings and format for the selected date type",
             "week_number": "第n周"
-          },
-          "experimental": {
-            "developer": "开发者",
-            "title": "实验性功能",
-            "warning": "以下设置仍未完成编写或测试，可能无法正常运作！"
           },
           "greeting": {
             "add_event": "Add Event",

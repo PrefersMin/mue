@@ -140,7 +140,7 @@
             "data": "Donnés",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
-            "experimental_warning": "Veuillez noter que l'équipe Mue ne peut pas fournir d'assistance si vous avez activé le mode expérimental. Veuillez d'abord le désactiver et voir si le problème persiste avant de contacter le support.",
+
             "offline_mode": "Mode hors-ligne",
             "offline_subtitle": "When enabled, all requests to online services will be disabled.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Display settings and format for the selected date type",
             "week_number": "Numéro de semaine"
-          },
-          "experimental": {
-            "developer": "Developer",
-            "title": "Expérimental",
-            "warning": "These settings have not been fully tested/implemented and may not work correctly!"
           },
           "greeting": {
             "add_event": "Add Event",

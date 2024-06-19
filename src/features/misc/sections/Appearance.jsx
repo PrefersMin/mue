@@ -7,8 +7,6 @@ import { Header, Section, Row, Content, Action } from 'components/Layout/Setting
 
 import { MdAccessibility } from 'react-icons/md';
 
-import values from 'utils/data/slider_values.json';
-
 function AppearanceOptions() {
   const [accessibility, setAccessibility] = useState(false);
 
@@ -226,7 +224,7 @@ function AppearanceOptions() {
             step="100"
             min="500"
             max="5000"
-            marks={values.toast}
+            // marks={values.toast}
             display={
               ' ' +
               variables.getMessage(

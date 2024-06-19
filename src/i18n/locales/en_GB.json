@@ -439,7 +439,7 @@
               "subtitle": "Choose a timezone from the list instead of the automatic default from your computer",
               "automatic": "Automatic"
             },
-            "experimental_warning": "Please note that the Mue team cannot provide support if you have experimental mode on. Please disable it first and see if the issue continues to occur before contacting support.",
+
             "preview_data_disabled": {
               "title": "Data Settings Disabled",
               "description": "Data settings are disabled in preview mode. Please exit preview mode to use this feature."
@@ -465,11 +465,6 @@
               "question": "Do you want to clear your stats?",
               "information": "This will clear all achievements and usage statistics."
             }
-          },
-          "experimental": {
-            "title": "Experimental",
-            "warning": "These settings have not been fully tested/implemented and may not work correctly!",
-            "developer": "Developer"
           },
           "language": {
             "title": "Language",

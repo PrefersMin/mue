@@ -3,7 +3,6 @@ import { Row, Content, Action } from 'components/Layout/Settings/Item';
 import variables from 'config/variables';
 import Slider from '../../../Form/Settings/Slider/Slider';
 
-import values from 'utils/data/slider_values.json';
 import EventBus from 'utils/eventbus';
 
 const PreferencesWrapper = ({ children, ...props }) => {
@@ -32,7 +31,7 @@ const PreferencesWrapper = ({ children, ...props }) => {
               max="400"
               default="100"
               display="%"
-              marks={values.zoom}
+              // marks={values.zoom}
               category={props.zoomCategory || props.category}
             />
           </Action>

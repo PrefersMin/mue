@@ -140,7 +140,7 @@
             "data": "Data",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
-            "experimental_warning": "Harap diperhatikan bahwa tim Mue tidak menyediakan dukungan jika Anda mengaktifkan mode experimental. Harap nonaktifkan terlebih dahulu dan lihat apabila kendala Anda masih terjadi sebelum menghubungi kami.",
+
             "offline_mode": "Mode Luring",
             "offline_subtitle": "When enabled, all requests to online services will be disabled.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Tampilkan setelan dan format untuk jenis tanggal yang dipilih",
             "week_number": "Nomor Urut Pekan"
-          },
-          "experimental": {
-            "developer": "Developer",
-            "title": "Experimental",
-            "warning": "These settings have not been fully tested/implemented and may not work correctly!"
           },
           "greeting": {
             "add_event": "Add Event",

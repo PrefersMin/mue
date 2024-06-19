@@ -140,7 +140,7 @@
             "data": "ডেটা",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "আপনার কম্পিউটারে আপনার Mue সেটিংস রপ্তানি করতে, একটি বিদ্যমান সেটিংস ফাইল আমদানি করতে বা আপনার সেটিংসকে তাদের ডিফল্ট মানগুলিতে পুনরায় সেট করতে চান তা চয়ন করুন",
-            "experimental_warning": "অনুগ্রহ করে মনে রাখবেন যে আপনার পরীক্ষামূলক মোড চালু থাকলে Mue টিম সাহায্য প্রদান করতে পারবে না। অনুগ্রহ করে প্রথমে এটি বন্ধ করুন এবং সাপোর্টের সাথে যোগাযোগ করার আগে সমস্যাটি ঘটতে থাকে কিনা তা দেখুন।",
+
             "offline_mode": "নীরব কার্যপদ্ধতি",
             "offline_subtitle": "সক্রিয় করা হলে, অনলাইন পরিষেবাগুলির সমস্ত অনুরোধ অক্ষম করা হবে।",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Display settings and format for the selected date type",
             "week_number": "Week number"
-          },
-          "experimental": {
-            "developer": "Developer",
-            "title": "পরীক্ষামূলক",
-            "warning": "এই সেটিংস সম্পূর্ণরূপে পরীক্ষিত/বাস্তবায়িত করা হয়নি এবং সঠিকভাবে কাজ নাও করতে পারে!"
           },
           "greeting": {
             "add_event": "Add Event",

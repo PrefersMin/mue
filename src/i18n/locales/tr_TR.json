@@ -140,7 +140,7 @@
             "data": "Verileriniz",
             "data_description": "Mue ayarlarınızı bilgisayarınıza aktarmayı, mevcut bir ayar dosyasını içe aktarmayı veya ayarlarınızı varsayılan değerlerine sıfırlamayı seçin.",
             "data_subtitle": "Mue'daki verilerinizi yönetin.",
-            "experimental_warning": "Deneysel modunuz açıksa Mue ekibinin destek sağlayamadığını lütfen unutmayın. Lütfen önce devre dışı bırakın ve desteğe başvurmadan önce sorunun devam edip etmediğini görün.",
+
             "offline_mode": "Çevrimdışı Mod",
             "offline_subtitle": "Etkinleştirildiğinde, çevrimiçi hizmetlere yönelik tüm talepler devre dışı bırakılır.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Seçilen tarih türü için ekran ayarlarını ve biçimi belirten özellikleri belirleyin.",
             "week_number": "Hafta Sayısı"
-          },
-          "experimental": {
-            "developer": "Developer",
-            "title": "Deneysel",
-            "warning": "Bu ayarlar tam olarak test edilmemiştir/uygulanmamıştır ve doğru çalışmayabilir!"
           },
           "greeting": {
             "add_event": "Olay Ekle",

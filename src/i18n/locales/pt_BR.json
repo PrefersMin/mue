@@ -140,7 +140,7 @@
             "data": "Dados",
             "data_description": "Choose whether to export your Mue settings to your computer, import an existing settings file, or reset your settings to their default values",
             "data_subtitle": "Escolha se deseja exportar suas configurações de Mue para o seu computador, importar um arquivo de configurações existente ou redefinir suas configurações para seus valores padrão",
-            "experimental_warning": "Observe que a equipe Mue não pode fornecer suporte se você tiver o modo experimental ativado. Desative-o primeiro e veja se o problema continua antes de entrar em contato com o suporte.",
+
             "offline_mode": "Modo offline",
             "offline_subtitle": "Quando ativado, todos os pedidos de serviços online serão desativados.",
             "preview_data_disabled": {
@@ -323,11 +323,6 @@
             },
             "type_settings": "Exibir configurações e formato para o tipo de data selecionado",
             "week_number": "Número da semana"
-          },
-          "experimental": {
-            "developer": "Desenvolvedor",
-            "title": "Experimental",
-            "warning": "Essas configurações não foram totalmente testadas/implementadas e podem não funcionar corretamente!"
           },
           "greeting": {
             "add_event": "Add Event",

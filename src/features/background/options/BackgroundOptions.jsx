@@ -1,16 +1,14 @@
 import variables from 'config/variables';
 import { PureComponent } from 'react';
-import { MdSource, MdOutlineKeyboardArrowRight, MdOutlineAutoAwesome } from 'react-icons/md';
+import { MdOutlineAutoAwesome, MdOutlineKeyboardArrowRight, MdSource } from 'react-icons/md';
 
 import { Header } from 'components/Layout/Settings';
-import { Checkbox, Dropdown, Slider, Radio, Text, ChipSelect } from 'components/Form/Settings';
-import { Row, Content, Action } from 'components/Layout/Settings/Item';
+import { Checkbox, ChipSelect, Dropdown, Radio, Slider, Text } from 'components/Form/Settings';
+import { Action, Content, Row } from 'components/Layout/Settings/Item';
 //import Text from 'components/Form/Settings/Text/Text';
-
 import ColourSettings from './Colour';
 import CustomSettings from './Custom';
 
-import values from 'utils/data/slider_values.json';
 import { APIQualityOptions, backgroundImageEffects, getBackgroundOptionItems } from './optionTypes';
 
 class BackgroundOptions extends PureComponent {
@@ -88,7 +86,7 @@ class BackgroundOptions extends PureComponent {
   }
 
   render() {
-    const APISettings = (
+    let backgroundSettings = (
       <>
         <Row final={this.state.backgroundAPI === 'mue'}>
           <Content
@@ -173,8 +171,6 @@ class BackgroundOptions extends PureComponent {
         )}
       </>
     );
-
-    let backgroundSettings = APISettings;
     switch (this.state.backgroundType) {
       case 'custom':
         backgroundSettings = <CustomSettings />;
@@ -387,7 +383,7 @@ class BackgroundOptions extends PureComponent {
                 max="100"
                 default="0"
                 display="%"
-                marks={values.background}
+                // marks={values.background}
                 category="backgroundeffect"
                 element="#backgroundImage"
               />
@@ -400,7 +396,7 @@ class BackgroundOptions extends PureComponent {
                 max="100"
                 default="90"
                 display="%"
-                marks={values.background}
+                // marks={values.background}
                 category="backgroundeffect"
                 element="#backgroundImage"
               />
@@ -424,7 +420,7 @@ class BackgroundOptions extends PureComponent {
                   max="100"
                   default="0"
                   display="%"
-                  marks={values.background}
+                  // marks={values.background}
                   category="backgroundeffect"
                   element="#backgroundImage"
                 />

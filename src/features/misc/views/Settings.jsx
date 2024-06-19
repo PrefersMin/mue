@@ -5,7 +5,7 @@ import Tabs from 'components/Elements/MainModal/backend/Tabs';
 
 import { NavbarOptions } from 'features/navbar';
 import { GreetingOptions } from 'features/greeting';
-import { TimeOptions, DateOptions } from 'features/time';
+import { DateOptions, TimeOptions } from 'features/time';
 import { QuickLinksOptions } from 'features/quicklinks';
 import { QuoteOptions } from 'features/quote';
 import { MessageOptions } from 'features/message';
@@ -13,14 +13,7 @@ import { BackgroundOptions } from 'features/background';
 import { SearchOptions } from 'features/search';
 import { WeatherOptions } from 'features/weather';
 import { Stats } from 'features/stats';
-import {
-  About,
-  AdvancedOptions,
-  AppearanceOptions,
-  ExperimentalOptions,
-  LanguageOptions,
-  Overview,
-} from '../sections';
+import { About, AdvancedOptions, AppearanceOptions, LanguageOptions, Overview } from '../sections';
 
 const sections = [
   { label: 'modals.main.marketplace.product.overview', name: 'order', component: Overview },
@@ -74,11 +67,6 @@ const sections = [
     component: AdvancedOptions,
   },
   { label: 'modals.main.settings.sections.stats.title', name: 'stats', component: Stats },
-  {
-    label: 'modals.main.settings.sections.experimental.title',
-    name: 'experimental',
-    component: ExperimentalOptions,
-  },
   { label: 'modals.main.settings.sections.about.title', name: 'about', component: About },
 ];
 

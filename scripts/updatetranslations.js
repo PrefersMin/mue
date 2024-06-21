@@ -28,7 +28,7 @@ if (!fs.existsSync(achievementsDir)) {
 }
 
 fs.readdirSync(localesDir).forEach((file) => {
-  if (file === 'en_GB.json') {
+  if (file === 'zh_CN.json') {
     return;
   }
 
@@ -36,7 +36,7 @@ fs.readdirSync(localesDir).forEach((file) => {
     return;
   }
 
-  const en = require(path.join(localesDir, 'en_GB.json'));
+  const en = require(path.join(localesDir, 'zh_CN.json'));
   const newdata = merge(en, require(path.join(localesDir, file)));
 
   compareAndRemoveKeys(newdata, en);
@@ -47,7 +47,7 @@ fs.readdirSync(localesDir).forEach((file) => {
 });
 
 fs.readdirSync(achievementsDir).forEach((file) => {
-  if (file === 'en_GB.json') {
+  if (file === 'zh_CN.json') {
     return;
   }
 
@@ -55,9 +55,9 @@ fs.readdirSync(achievementsDir).forEach((file) => {
     return;
   }
 
-  const enGBFilePath = path.join(achievementsDir, 'en_GB.json');
+  const enGBFilePath = path.join(achievementsDir, 'zh_CN.json');
   if (!fs.existsSync(enGBFilePath)) {
-    console.error(`File 'en_GB.json' does not exist in the directory '${achievementsDir}'`);
+    console.error(`File 'zh_CN.json' does not exist in the directory '${achievementsDir}'`);
     return;
   }
 
